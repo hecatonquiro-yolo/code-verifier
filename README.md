@@ -54,5 +54,34 @@ Permite "servir" sitios estáticos.
     "serve:coverage": "cd coverage/lcov-report && npx serve"
 }</code>
 
+## Scripts
+
+<code>
+"scripts": {
+    "build": "npx tsc",
+    "start": "node dist/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
+    "test": "jest",
+    "serve:coverage": "cd coverage/lcov-report && npx serve"
+  }
+</code>
+
+* *build*: Permite compilar el proyecto definido por un tsconfig.json
+
+* *start*: Ejecuta el archivo javascript ya compilado
+
+* *dev*: Hace la compilación y mantiene activo el servidor usando nodemon
+
+* *test*: Activa el jest
+
+* *serve:coverage*: Se dirige al archivo donde se encuentra el reporte que da el test y lo sirve en el puerto que disponga.
+
+
+## Variables de Entorno
+Necesitas tener estas variables en un archivo .env
+
+<code>
+PORT=8000
+</code>
 
 
