@@ -1,26 +1,34 @@
-import express, { Express, Request, Response } from "express"; 
+import express, { Express, Request, Response } from 'express'
 import dotenv from 'dotenv'
-import { resolveSoa } from "dns";
+/* import {resolveSoa} from 'dns' */
 
-//Configuration .env files
+//  Configuration .env files
 dotenv.config()
 
-//Create Express APP
+//  Create Express APP
 
 const app: Express = express()
 const port = process.env.PORT || 8000
 
-// Define the first app's route 
+// Define the first app's route
 app.get('/', (req: Request, res: Response) => {
-    //Send Hello World!
-    res.send('APP Express + TS + JS + Node')
+  //    Send Hello World!
+  res.json({
+    data: {
+      message: 'Goodbay, world'
+    }
+  })
 })
 
-//Define the second route of app
-app.get('/hola', (req: Request, res: Response)=> {
-    res.send('Hola, a la rta Hola!')
+// Define the second route of app
+app.get('/hello/:name', (req: Request, res: Response) => {
+  const paramName = req.params.name
+  res.json({
+    data: {
+      message: `Hola, ${paramName}`
+    }
+  })
 })
-
 
 // Execute app and listen
 
