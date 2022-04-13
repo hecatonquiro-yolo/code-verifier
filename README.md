@@ -57,16 +57,16 @@ Permite "servir" sitios estáticos.
 ## Scripts
 
 <code>
-"scripts": {
-    "build": "npx tsc",
-    "start": "node dist/index.js",
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
-    "test": "jest",
-    "serve:coverage": "cd coverage/lcov-report && npx serve"
+"scripts": {<br>
+    "build": "npx tsc",<br>
+    "start": "node dist/index.js",<br>
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",<br>
+    "test": "jest",<br>
+    "serve:coverage": "cd coverage/lcov-report && npx serve"<br>
   }
 </code>
 
-* *build*: Permite compilar el proyecto definido por un tsconfig.json
+* *build*: Permite compilar el proyecto definido por un tsconfig.json 
 
 * *start*: Ejecuta el archivo javascript ya compilado
 
