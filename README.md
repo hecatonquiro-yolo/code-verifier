@@ -4,16 +4,19 @@
 
 * ##### Express
 <code>npm i express</code>
+
 Express es un framework de Nodejs para estructurar las aplicaciones más fácilmente.
 
 * #### Dotenv
 <code>npm i dotenv</code>
+
 Dotenv nos permite cargar a través del método <code>config()</code> y el objeto <code>path</code>, el archivo <code>.env</code> que necesitamos de acuerdo al entorno deseado.
 
 ### Dependencias de Desarollo
 
 * #### Typescript
 <code>npm i -D typescript ts-node @types/express @types/node</code>
+
 Typescript es un lenguaje de programación libre y de código abierto desarrollado e implementado por Microsoft. Es un superconjunto de Javascript, que esencialmente añade tipos estáticos y objetos basados en clases. 
 
 Para ejecutar typescript utilizamos el transpilador TSC, el cual se ejecutará con la siguiente línea de comando:
@@ -43,6 +46,7 @@ Es un marco de prueba de Javascript desarrollado por Meta(antiguo Facebook)
 * #### Serve
 
 <code>npm i -D serve</code> 
+
 Permite "servir" sitios estáticos.
 
 <code>Para visualizar el uncoverage, modifica el package.json 
