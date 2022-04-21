@@ -11,14 +11,6 @@ const app: Express = express()
 const port = process.env.PORT || 8000
 
 // Define the first app's route
-app.get('/', (req: Request, res: Response) => {
-  //    Send Hello World!
-  res.json({
-    data: {
-      message: 'Goodbay, world'
-    }
-  })
-})
 
 // Define the second route of app
 app.get('/hello/:name', (req: Request, res: Response) => {
