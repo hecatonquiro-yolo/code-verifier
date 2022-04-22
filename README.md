@@ -54,6 +54,24 @@ Permite "servir" sitios estáticos.
     "serve:coverage": "cd coverage/lcov-report && npx serve"
 }</code>
 
+* #### CORS
+
+<code>npm i cors </code>
+<code>npm i -D @types/cors</code>
+
+Intercambio de Recursos de Origen Cruzado (CORS) es una característica de seguridad del navegador que restringe las solicitudes HTTP de origen cruzado que se inician desde secuencias de comandos que se ejecutan en el navegador.
+
+* #### Helmet
+<code>npm i helmet</code>
+
+Es una colección de nueve funciones de middleware mas paquetes que establecen cabeceras HTTP relacionadas con las seguridad.
+
+* #### Mongoose
+<code>npm i mongoose</code>
+
+Es una librería para node.js que nos permite escribir consultas para una base de datos de MongoDB, con característias como validaciones, construcciones de queries, middlewares, conversión de tipos, entre otras...
+
+
 ## Scripts
 
 <code>

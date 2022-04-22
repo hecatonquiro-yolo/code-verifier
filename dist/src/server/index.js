@@ -13,6 +13,7 @@ const helmet_1 = __importDefault(require("helmet"));
 // Root Router
 const index_1 = __importDefault(require("../routes/index"));
 const HelloRouter_1 = __importDefault(require("../routes/HelloRouter"));
+const GoodbyeRouter_1 = __importDefault(require("../routes/GoodbyeRouter"));
 // Config the .env files
 dotenv_1.default.config();
 // Create Express APP
@@ -21,6 +22,7 @@ const server = (0, express_1.default)();
 // From this point onover: http://localhost/8000/api
 server.use('/api', index_1.default);
 server.use('/api/hello', HelloRouter_1.default);
+server.use('/api/goodbye', GoodbyeRouter_1.default);
 // TODO Mongoose Connection
 // Security Config
 server.use((0, helmet_1.default)());

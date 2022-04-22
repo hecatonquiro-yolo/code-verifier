@@ -14,6 +14,7 @@ import helmet from 'helmet'
 
 import rootRouter from '../routes/index'
 import helloRouter from '../routes/HelloRouter'
+import goodbyeRouter from '../routes/GoodbyeRouter'
 
 // Config the .env files
 dotenv.config()
@@ -31,6 +32,8 @@ server.use(
 )
 
 server.use('/api/hello', helloRouter)
+
+server.use('/api/goodbye', goodbyeRouter)
 
 // TODO Mongoose Connection
 
