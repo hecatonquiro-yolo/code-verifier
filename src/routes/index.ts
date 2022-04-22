@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express'
 import helloRouter from './HelloRouter'
-import { logInfo } from '@/utils/logger'
+import { logInfo } from '../utils/logger'
 
 // Server Instance
 
@@ -12,7 +12,7 @@ const rootRouter = express.Router()
 
 rootRouter.get('/', (req: Request, res: Response) => {
   // Send Json!
-  logInfo('Get http://localhost:8000/apis')
+  logInfo('Get http://localhost:8000/api')
   res.json({
     data: {
       message: 'Goodbay, world'
@@ -26,3 +26,5 @@ server.use('/', rootRouter) // http://localhost:8000/api/
 server.use('/hello', helloRouter) // http://localhost:8000/api/hello
 
 // Add more routes
+
+export default rootRouter
