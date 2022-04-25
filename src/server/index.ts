@@ -35,6 +35,10 @@ server.use('/api/hello', helloRouter)
 
 server.use('/api/goodbye', goodbyeRouter)
 
+// *Static Server
+
+server.use(express.static('public'))
+
 // TODO Mongoose Connection
 
 // Security Config
